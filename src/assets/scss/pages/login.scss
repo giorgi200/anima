@@ -20,6 +20,7 @@
         .auth-text{
             margin-top: 11.8vh;
             // text-align: center;
+            font-size: 1.9vw;
             font-family: "PantonMtav3";
             margin-bottom: 10.4vh;
         }
@@ -28,6 +29,10 @@
             margin-right: auto;
             margin-left: auto;
             margin-bottom: 12.4vh; 
+            .sended-password{
+                font-family: "BPG LE Studio 04 Caps", sans-serif;
+                font-size: 0.87vw;
+            }
             .input-group.error-input{
                 border-color: #FF0053;
             }
@@ -42,11 +47,17 @@
                 animation-name: fadeInLeft;
                 animation-duration: 0.4s;
             }
-
+            
             .input-group{
                 border-bottom:solid 1px #fff;
                 margin-top: 4.63vh;
-                
+                position: relative;
+                .in-login{
+                    animation-name: none;
+                    position: absolute;
+                    max-width: 100%;
+                    transform: translateY(150%);
+                }
                 input{
                     background-color: transparent;
                     border: none;
@@ -77,6 +88,9 @@
                 }
             }
         }
+        .auth-submit.reco{
+            margin-bottom: 13.4vh;
+        }
         .auth-submit{
             border: solid 1px rgba(31, 242, 253, 0.9);
             border-radius: 5px;
@@ -87,9 +101,9 @@
             line-height: 1;
             background-color: transparent;
             color: #fff;
-            width: 9.8vw;
+            min-width: 9.8vw;
             margin-bottom: 1.38vh;
-            padding: 6px 0 4px;
+            padding: 6px 10px 4px;
         }
         .auth-forgot-password{
             color: #fff;

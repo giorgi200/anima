@@ -10,36 +10,33 @@ class login extends Component {
         },
     }
     componentDidMount(){
-        document.title = "ავტორიზაცია - Anima Chatbotics"
+        document.title = "პაროლის აღდგენა - Anima Chatbotics"
     }
     render() {
         return (
             <div id="login">
                 <form className="auth">
-                    <h1 className="auth-text">ავტორიზაცია</h1>
+                    <h1 className="auth-text">პაროლის<br />აღდგენა</h1>
                     <div className="auth-form">
                         <div className="input-group">
-                            <input type="mail" className="form-control" placeholder="ელ.ფოსტა"  />
+                            <input type="password" className="form-control" placeholder="ახალი პაროლი"  />
                             <div className="input-group-append">
                                 <span className="input-group-text">
-                                    <i className="material-icons">mail_outline</i>
+                                    <i className="material-icons">lock_outline</i>
                                 </span>
                             </div>
                         </div>
                         <div className="input-group ">
-                            <input type="password" className="form-control" placeholder="პაროლი"  />
+                            <input type="password" className="form-control" placeholder="გაიმეორეთ პაროლი"  />
                             <div className="input-group-append">
                                 <span className="input-group-text" id="basic-addon2">
                                     <i className="material-icons">lock_outline</i>
                                 </span>
                             </div>
-                            {   this.state.notValid ? <p  className="in-login invalid-feedback custom-error">თქვენს მიერ შეყვანილი მეილი ან პაროლი არასწორია</p> : ""}
                         </div>
                         
                     </div>
-                    <button className="auth-submit" onClick={this.state.Validation} type="button">შესვლა</button>
-                    <Link to="/forgot" className="auth-forgot-password" >პაროლის აღდგენა</Link>
-                    <Link to="/registration" className="auth-registration" >რეგისტრაცია</Link>
+                    <button className="auth-submit reco" onClick={this.state.Validation} type="button">დასრულება</button>
                 </form>
             </div>
         );
